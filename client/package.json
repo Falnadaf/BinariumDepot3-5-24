@@ -4,11 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-        "prebuild": "npm install --legacy-peer-deps",
-
     "dev": "vite",
-    "prebuild": "npm install --legacy-peer-deps",
-cd    "build": "vite build",
+    // "prebuild": "npm install --legacy-peer-deps",
+    "build": "npm install --legacy-peer-deps && vite build",
     "generate-pwa-assets": "pwa-assets-generator --preset minimal public/logo.svg",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
